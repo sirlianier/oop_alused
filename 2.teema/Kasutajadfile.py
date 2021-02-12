@@ -27,3 +27,6 @@ robert.eesnimi = "Robert"
 robert.perenimi = "Rob"
 robert.kasutaja_nimi = "robert"
 robert.parool = "qwerty"
+robert.kirjelda_kasutaja()
+print()
+robert.tervita_kasutaja()
