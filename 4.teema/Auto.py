@@ -22,3 +22,10 @@ class Auto():
 
     def suurenda_odomeeter(self, km):
         self.odomeetri_nait += km
+
+    def tangi(self, l):
+        print("Tangid " + str(l) + " liitrit kütust")
+
+    def tangi(self):
+        print("Antud auto ei vaja kütust sõitmiseks")
+
