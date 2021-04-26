@@ -1,19 +1,8 @@
-class Kasutajad():
-    def __init__(self, e, n, kn, p):
-        self.eesnimi = e
-        self.perenimi = n
-        self.kasutajanim = kn
-        self.parool = p
-        self.roll = "admin"
+from Kasutaja import Kasutaja
+from admin import Admin
 
-    def kasutaja_kirjeldus(self):
-        print("Eesnimi: " + str(self.eesnimi))
-        print("Perekonnanimi: " + str(self.perenimi))
-        print("Kasutajanimi:" + (self.kasutajanim))
-        print("Parool: " + str(self.parool))
-        print("Kasutaja roll on " + str(self.roll))
+tavakasutaja = Kasutaja("Tava", "Kasutaja", "user", "qwerty")
+tavakasutaja.tervita_kasutaja()
 
-
-
-    def kasutaja_tervitus(self):
-        print("Tervist, " + str(self.kasutajanim) + " teie roll on " + str(self.roll))
+administraator = Admin("Admin", "Istraator", "root", "qwerty")
+administraator.tervita_kasutaja()
